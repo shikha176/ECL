@@ -1,0 +1,45 @@
+
+  /* Left Categories section*/
+  .left-header{
+    font-size: 16px;
+    padding: 17px 13px 12px;
+    background-color: #31708f;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #eee;
+  }
+
+  .product-container{
+    padding: 5em;
+    width: 99vw;
+  }
+
+  .left-body ul{
+    list-style: none;
+    padding-left: 11px;
+    margin-top: 10px;
+  }
+
+  .left-body li{
+    margin-bottom:6px;    
+  }
+
+  .items{
+    cursor: pointer;
+  }
+
+  .items:hover{
+    font-size:15px;
+    color: #8181d4;
+  }
+
+  .sections{
+    padding:0px;
+    border: #E5E5E5 1px solid;
+    height:600px;
+  }
+
+  .main-cat{
+    font-weight:600;
+    color: #3c4061;
+  }

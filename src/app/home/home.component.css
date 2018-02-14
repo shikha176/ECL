@@ -1,0 +1,233 @@
+
+/*---------------------------------------
+    Intro section              
+-----------------------------------------*/
+#intro {
+    background: url('../../assets/images/intro.jpg') 50% 0 repeat-y fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -webkit-flex;
+     display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+     -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+    height: 60vh;
+    text-align: center;
+}
+
+#intro h3 {
+  letter-spacing: 2px;
+}
+
+
+
+/*---------------------------------------
+    Detail section              
+-----------------------------------------*/
+#detail {
+    background: #222;
+    color: #ffffff;
+}
+
+#detail .fa {
+  color: #f2545f;
+  font-size: 48px;
+}
+
+/*---------------------------------------
+   Product Category  section              
+-----------------------------------------*/
+#overview img {
+  position: relative;
+  width: 100%;  
+  height: 250px;
+}
+
+
+/*---------------------------------------
+   Sponsors section              
+-----------------------------------------*/
+#sponsors img {
+    margin-top: 18px;
+  }
+
+#sponsors .section-title{  
+  background: linear-gradient(to bottom, #767676 0%, rgba(0,0,0,0.8) 100%);
+  color: #eee;
+  margin-bottom: 20px;
+}
+
+#sponsors h3{
+  font-size: 18px !important;
+  color: #ccc;
+  padding: 7px 0 7px 20px;
+  font-weight: 400 !important;
+}
+
+#sponsors img{
+  margin: auto;
+  width: 220px;
+}
+
+  
+
+/*---------------------------------------
+   Responsive styles            
+-----------------------------------------*/
+@media (max-width: 980px) {
+    
+      p {font-size: 13px;}
+    
+      #intro { height: 65vh; }
+    
+      #video iframe {
+        margin-top: 42px;
+      }
+    
+    }
+    
+    @media (max-width: 768px) {
+    
+      .custom-navbar .navbar-brand {
+        line-height: 20px;
+      }
+    
+      #overview img,
+      #detail .col-md-4,
+      #register form {
+        padding-top: 32px;
+      }
+    
+      #program img {
+        padding-bottom: 32px;
+      }
+    
+      #sponsors img {
+        padding-top: 22px;
+      }
+    
+    
+    }
+    
+    @media (max-width: 760px) {
+    
+      #intro {
+        height: 100vh;
+      }
+    
+    }
+
+
+  /*---------------------------------------
+    General               
+-----------------------------------------*/
+.section-title {
+    margin-bottom: 32px;
+  }
+  
+  #overview, #sponsors {
+    padding: 8rem 8rem 0 8rem;
+  }
+
+  #detail, 
+  #contact, footer {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+  }
+  
+  #detail,
+  footer {
+    text-align: center;
+  }
+  
+  #overview h3,
+  #detail h3,
+  #contact h3 {
+      padding-bottom: 12px;
+  }
+  
+  #intro .btn,
+  #contact .btn {
+      background: transparent;
+      border: 2px solid #ffffff;
+      border-radius: 0px;
+      color: #ffffff;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 12px;
+      padding: 14px 42px;
+      margin-top: 42px;
+      margin-right: 12px;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+  }
+  
+  #intro .btn-danger,
+  #contact .btn-danger {
+      background: #f2545f;
+      border-color: transparent;
+  }
+  
+  #contact .btn {
+    border-radius: 100px;
+  }
+  
+  #intro .btn-danger:hover {
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  
+  #contact .btn-danger:hover {
+    background: #222;
+  }
+  
+  #intro .btn-default:hover {
+      background: #ffffff;
+      color: #333333;
+      border-color: transparent;
+  }
+  
+  .parallax-section {
+    background-attachment: fixed !important;
+    background-size: cover !important;
+  }
+
+/deep/ .ui-carousel .ui-carousel-header{
+  background: linear-gradient(to bottom, #767676 0%, rgba(0,0,0,0.8) 100%);
+  color: #eee;
+  margin-bottom: 20px;
+}
+
+/deep/ .ui-widget-content {
+  border: 0px;
+}
+
+/deep/ .ui-carousel .ui-carousel-header .ui-carousel-header-title {
+  font-size: 18px;
+  color: #ccc;
+  padding-left: 8px;
+}
+
+/deep/ .ui-carousel .ui-carousel-page-links {
+  display: none;
+}
+
+/deep/ .ui-carousel .ui-carousel-viewport .ui-carousel-items .ui-carousel-item {
+  margin-right: 1.5em;
+  padding: 1em 1.25em;
+  background-color: #e6dfdf;
+}
+
+/deep/ .ui-carousel .ui-carousel-viewport .ui-carousel-items {
+ display:flex
+}
+
+/deep/ .ui-carousel .ui-carousel-page-link, .ui-carousel .ui-carousel-button {
+  font-size: 18px;
+}

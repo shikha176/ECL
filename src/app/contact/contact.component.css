@@ -1,0 +1,129 @@
+.fh5co-page-title {
+    padding: 10em 0 5em 0 !important;
+}
+
+.fh5co-page-title {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 7em 0;
+    position: relative;
+}
+
+.fh5co-page-title .overlay {
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.fh5co-page-title .container {
+    position: relative;
+    z-index: 2;
+}
+
+.js .animate-box {
+    opacity: 0;
+}
+
+.fh5co-page-title h1 {
+    font-size: 40px;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0;
+}
+
+.fh5co-page-title h1 .colored {
+    color: #4CB648;
+}
+
+.fh5co-contact {
+    padding: 7em 0;
+}
+
+.js .animate-box {
+    opacity: 0;
+}
+
+.contact-info {
+    margin-bottom: 4em;
+    padding: 0;
+}
+
+.contact-info li {
+    list-style: none;
+    margin: 0 0 20px 0;
+    position: relative;
+    padding-left: 40px;
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      /*-webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);*/
+      -webkit-transform: translate3d(0, 40px, 0);
+      transform: translate3d(0, 40px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      /*-webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);*/
+      -webkit-transform: translate3d(0, 40px, 0);
+      transform: translate3d(0, 40px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.animated-fast {
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.form-control {
+    box-shadow: none;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    min-height: 54px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.contact-info li .glyphicon {
+    position: absolute;
+    left: 0;
+    font-size: 22px;
+    color: #118DF0;
+}
+
+agm-map {
+    width: 100%;
+    height: 50vh;
+}
+
+

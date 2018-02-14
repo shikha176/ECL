@@ -1,0 +1,73 @@
+<div class="fh5co-page-title" style="background-image: url(assets/images/Contact-us.jpg);height: 80vh;">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 animate-box">
+               <!-- <h1><span class="colored">Contact</span> Us</h1>-->
+                <agm-map [latitude]="lat" [longitude]="lng">
+                        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                </agm-map>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="fh5co-contact animate-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li> <span class="glyphicon glyphicon-map-marker"></span>424, Lajpat Rai Market, Chandni Chowk, Delhi 110006</li>
+                    <li><span class="glyphicon glyphicon-earphone"></span>011- 23862393, 66316424</li>
+                    <li><span class="glyphicon glyphicon-phone"></span>(+91) 9810528914, 9971387102 </li>
+                    <li><span class="glyphicon glyphicon-envelope"></span><a >eclnest@gmail.com</a></li>
+                </ul>
+            </div>
+            <form class="col-md-8 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0" name="contactform" 
+            #contactForm="ngForm">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Your Name" type="text" required
+                            #name="ngModel" name="name" [(ngModel)]="user.name">
+                            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                                Name is required </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Your Email" type="email" required
+                            #email="ngModel" name="email" [(ngModel)]="user.email">
+                            <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
+                            Email is required </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Subject" type="text"
+                                #subject="ngModel" name="subject" [(ngModel)]="user.subject">
+                            </div>
+                        </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <textarea  class="form-control" cols="30" rows="7" placeholder="Your Query"
+                            required #query="ngModel" name="query" [(ngModel)]="query.subject"></textarea>
+                            <div [hidden]="query.valid || query.pristine" class="alert alert-danger">
+                                    Query is required </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input value="SEND" class="btn btn-primary" type="submit" 
+                            [disabled]="!contactForm.form.valid" (click)="submitQuery(); contactForm.reset()">
+                        </div>
+                    </div>
+                </div>
+                <div  class="col-md-12" *ngIf="acknowledgeQuery" class="alert alert-info">
+                        We will respond to your query shortly.</div>
+            </form>
+        </div>
+    </div>	
+</div>
